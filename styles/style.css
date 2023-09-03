@@ -277,18 +277,42 @@ textarea {
 
 /* mobile devices */
 @media screen and (max-width:576px) {
+    .header {
+        background-image: none;
+    }
 
+    nav,
+    nav>ul,
+    .banner,
     .skill-container,
     .resume-container,
+    .about-info-container,
     footer {
         flex-direction: column;
+    }
+
+    nav>ul {
+        gap: 10px;
+    }
+
+    .banner {
+        padding: 30px 10px 0px 10px;
+    }
+
+    .btn-primary {
+        margin-bottom: 20px;
+    }
+
+    .banner .profile-pic {
+        width: 100%;
     }
 
     #what-i-do-description {
         padding: 10px 10px;
     }
 
-    footer {
+    footer,
+    .about {
         padding: 10px;
     }
 
@@ -306,5 +330,9 @@ textarea {
 @media screen and (min-width:576px) and (max-width:960px) {
     footer {
         padding: 30px;
+    }
+
+    .btn-primary {
+        margin-bottom: 20px;
     }
 }
